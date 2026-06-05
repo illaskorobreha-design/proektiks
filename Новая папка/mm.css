@@ -1,0 +1,337 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.header{
+    position: fixed;
+    width: 100%;
+    background:  white    ;
+    z-index: 999;
+    padding: 30px 0 30px 0;
+    top: 0;
+
+}
+.header__container, .hero__container, .podpiska__container, .mini-podpiska__container, .subscription__container {
+    max-width: 1069px;
+    margin-inline: auto;
+    
+}
+.header__nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+.header__list{
+    display: flex;
+  
+   gap: 49px;
+}
+ul{
+     list-style : none;
+}
+.header__list-link{
+    font-family: "DM Sans", sans-serif;
+    font-weight: 700;
+    color: gray;
+
+}
+.header__list-link.active{
+    color: black;
+}
+.header__list-link:hover{
+    color: black;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.header__button, .hero__button{
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: -0,53px;
+    color: white;
+    padding: 19px 59px;
+    background-color: rgb(243, 137, 38);
+    border-radius: 10px;
+}
+.header__button:hover{
+    opacity: 80%;
+}
+.hero{
+    padding-block: 70px;
+}
+.hero__image{
+    position: absolute;
+    top: 0;
+    right: -75px;
+}
+.hero__container{
+    position: relative
+}
+.hero__title{
+    font-family: "Mulish", sans-serif;
+    font-weight: 900;
+    font-size: 80px;
+    line-height: 77px;
+    
+}
+.hero__desc{
+    font-family: "Mulish", sans-serif;
+   color: grey;
+   line-height: 30px;
+    font-size: 20px;
+    margin-top: 30px;
+    
+}
+.hero__buttons{
+     max-width: 1069px;
+    margin-inline: auto;
+    margin-top: 50px;
+     display: flex;
+     gap: 40px;
+     margin-top: 50px;
+
+}
+.hero__button{
+   background-color: rgb(80, 11, 192);
+}
+.hero__button:hover{
+    opacity: 80%;}
+
+.hero__scroll{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    
+}
+.hero__content{
+    max-width: 423px;
+    padding-block: 92px;
+}
+.companies__company{
+   display: flex;
+    justify-content: space-between;
+    align-items: center;
+     max-width: 1069px;
+    margin-inline: auto;
+    padding-top: 50px;
+}
+.podpiskas{
+    padding-block: 120px;
+}
+.podpiska__container{
+    display: flex;
+    flex-direction: column;
+    gap: 69px;
+
+}
+.podpiska{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.podpiska__content{
+    display: flex ;
+    flex-direction: column;
+    gap: 30px;
+    max-width: 459px;
+}
+.podpiska__title{
+ font-family: "Mulish", sans-serif;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 57px;
+    letter-spacing: -1.56px;
+}
+.podpiska__desc{
+    font-family: "Mulish", sans-serif;
+    color: grey;
+     font-size: 20px;
+      line-height: 30px;
+      letter-spacing: -0.63px;
+
+}
+.podpiska__link{
+    font-size: 17px;
+      font-weight: 700;
+      color: rgb(80, 11, 192);
+      letter-spacing: -0.53px;
+}
+.podpiska__link:hover{
+    text-decoration: underline;
+
+}
+main{
+margin-top: 100px;
+}
+html{
+    scroll-padding: 100px;
+    scroll-behavior: smooth;
+}
+.mini-podpiskas{
+    padding-block: 32px;
+}
+.mini-podpiska__container{
+     display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 74px;
+}
+.mini-podpiska__title{
+    font-size: 24px;
+    letter-spacing: -0,75px;
+     font-weight: 700;
+     line-height: 36px;
+}
+.mini-podpiska__desc{
+    font-size: 16px;
+     font-weight: 400;
+     line-height: 24px;
+     letter-spacing: -0,53px;
+     color: grey;
+}
+.mini-podpiska__image{
+    height: 97px;
+}
+.mini-podpiska{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    text-align: center;
+}
+.subscription{
+    padding-block: 140px 158px;
+}
+.subscription__container{
+    display: flex;
+    flex-direction: column;
+    gap: 82px;
+    
+}
+.subscription__title{
+    font-weight: 700;
+    font-size: 60px;
+    letter-spacing: -1.88px;
+    line-height: 70px;
+}
+.subscription__tabs{
+    display: flex;
+   border-block: 5px solid #F7F7F7B0;
+   border-inline: 6px solid #F7F7F7B0;
+   border-radius: 10px;
+   font-family: inherit;
+   font-weight: 700;
+   font-size: 16px;
+   letter-spacing: -0,5px;
+
+}
+.subscription__title{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+     
+}
+.subscription__tab{
+    cursor: pointer;
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: -0,5px;
+    background: rgb(230, 228, 228);
+    border:none;
+    padding: 19px 59px;
+    border-radius:0 10px 10px 0;
+    color: dark;
+
+
+}
+.subscription__tab.active{
+    background:rgb(55, 0, 128);
+    border-radius: 10px 0 0 10px;
+    color: white;
+}
+.subscription__header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.subscription__plans{
+    display:grid;
+    grid-template-columns: 1fr 1.14fr 1fr;
+    gap: 17px;
+    
+}
+.subscription__plan{
+    padding: 34px 23px 27px;
+    background:rgb(241, 241, 240);
+    border-radius: 10px;
+}
+.subscription__plan-title{
+    font-weight: 700;
+    font-size: 18px;
+     letter-spacing: -0,53px;
+     line-height: 28px;
+     text-align: center;
+     
+}
+.subscription__plan-price{
+    font-weight: 700;
+    font-size: 60px;
+     letter-spacing: -1.03px;
+     line-height: 56px;
+     color: dark;
+     margin-top: 22px;
+     text-align: center;
+
+}
+.subscription__plan-price > span{
+    font-size: 28px;
+}
+.subscription__plan-features{
+    font-weight: 400;
+    font-size: 16px;
+      letter-spacing: -0,53px;
+      line-height: 24px;
+      color: rgb(24, 21, 21);
+      margin-top: 22px;
+}
+.subscription__plan-features{
+    font-family: "Mulish", sans-serif;
+    font-size: 17px;
+      letter-spacing: -0,53px;
+      line-height: 50px;
+      margin-bottom: 28px;
+      text-align: center;
+}
+.subscription__plan-button{
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+       font-weight: 700;
+       letter-spacing: -0,5px;
+       background-color: rgb(248, 247, 247);
+       border-radius: 10px;
+       padding-block: 19px;
+       margin-top: 36px;
+       color: rgb(98, 98, 241);
+}
+.subscription__plan.active{
+    background-color: rgb(247, 140, 69);
+    
+}
+.subscription__plan.active .subscription__plan-title {
+    color: rgb(235, 232, 232)
+
+}
+.subscription__pla.active .subscription__plan-price, 
+.subscription__plan.active .subscription__plan-features, 
+.subscription__plan.active .subscription__plan-button{
+    color: rgb(235, 232, 232);
+}
+.subscription__plan.active .subscription__plan-button{
+    background: rgb(218, 96, 14);
+}
